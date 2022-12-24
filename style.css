@@ -1,0 +1,103 @@
+@import url(https://fonts.google.com/specimen/Roboto);
+@import url(https://fonts.google.com/noto/specimen/Noto+Sans);
+
+body{
+    background-color: rgb(163, 163, 221);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 89px;
+    background-color: black;
+    color: white;
+}
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 163px;
+    padding: 0 8px;
+
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto','Noto+Sans';
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border: 12px;
+    padding: 34px;
+    background-image: url(tee.jpg);
+}
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icons{
+    margin-top: 14px;
+}
+
+.icons i{
+    cursor: pointer;
+
+}
+#myProgressBar{
+    width: 80vw;
+}
+
+.SongItemContainer{
+    margin: 21px;
+}
+.SongItem{
+    height: 39px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+}
+.SongItem img{
+    width: 52px;
+    margin: 7px;
+    border-radius: 34px;
+}
+.timestamp{
+    margin: 0 23px;
+    cursor: pointer;
+}
+.SongInfo{
+    position: absolute;
+    left: 10vw;
+}
+
+.SongInfo img{
+    opacity: 0;
+    transition: opacity is ease-in;
+}
